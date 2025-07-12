@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .item1 { grid-area: header;  text-align:justify;}/*头部*/
+        .item2 { grid-area: menu;  text-align:justify;}/*菜单*/
+        .item3 { grid-area: main;  text-align:auto;}/*主要信息*/
+        .item4 { grid-area: right;  text-align:justify;}/*右边栏*/
+        .item5 { grid-area: footer;  text-align:justify;}/*页脚*/
+        body{background-color:#555555}/*网页背景颜色*/
+        h1{text-indent: 2em; }/*标题缩进*/
+        inset {border-style:inset;}
+        a {color:#0000ff;}
+        
+        .grid-container {
+          display: grid;
+          
+          grid:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+          grid-gap: 1px;
+          background-color: #999999
+          padding: 1px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: auto;
+          padding: 6px ;
+          font-size: 10px;
+        }
+    </style>
+
+    <style>
+        .item1 { grid-area: header;  text-align:justify;}/*头部*/
+        .item2 { grid-area: menu;  text-align:justify;}/*菜单*/
+        .item3 { grid-area: main;  text-align:auto;}/*主要信息*/
+        .item4 { grid-area: right;  text-align:justify;}/*右边栏*/
+        .item5 { grid-area: footer;  text-align:justify;}/*页脚*/
+        body{background-color:#555555}/*网页背景颜色*/
+        h1{text-indent: 2em; }/*标题缩进*/
+        inset {border-style:inset;}
+        a {color:#0000ff;}
+        
+        .grid-container {
+          display: grid;
+          
+          grid:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+          grid-gap: 1px;
+          background-color: #999999
+          padding: 1px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: auto;
+          padding: 6px ;
+          font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+
+
+    <div class="grid-container">
+        <div class="item1">
+            <img src="logo.svg" alt="logo">
+            <a href="index.html">首页</a>
+            <a href="raspi.html">树莓派</a>
+            <a href="html.html">网址大全</a>
+            <a href="game.html">小游戏</a>
+
+            <a href="scratch.html"></a>
+        </div>
+
+
+
+
+
+        <div class="item2">
+            <inset>❏所需材料</inset>
+            <br><a href="#">请观看一篇文章<br>这里将会显示<br>需要的软件或网址</a>
+
+
+        </div>
+
+
+
+
+
+        <div class="item3">
+            <inset>❏网址大全</inset><br>
+            <a href="https://baidu.com">百度</a>
+            <a href="https://sohu.com">搜狐</a>
+            <a href="https://163.com">网易</a>
+            <a href="https://scratch.mit.edu">scratch</a>
+            <a href="https://bilibili.com">哔哩哔哩</a>
+            <a href="https://raspberrypi.com">树莓派</a><br>
+            <a href="https://runoob.com">菜鸟教程</a>
+            <a href="https://jyshare.com">html编辑</a></a>
+            <a href="https://putty.org">putty</a></a>
+        </div>
+
+
+
+
+
+
+        <div class="item4">
+            <inset>❏我猜你想找...</inset>
+        </div>
+
+
+
+
+
+        <div class="item5">
+            <inset><a href="#">❏没有下一篇了...</a></inset>
+        </div>
+    </div>
+
+</body>
+
+</html>
